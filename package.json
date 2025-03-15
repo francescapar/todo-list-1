@@ -1,12 +1,15 @@
 {
-  "name": "todolist",
+  "name": "todo-list-1",
   "version": "1.0.0",
+  "homepage": "https://francescapar.github.io/todo-list-1",
   "main": "index.js",
   "scripts": {
     "start": "expo start",
     "android": "expo start --android",
     "ios": "expo start --ios",
-    "web": "expo start --web"
+    "web": "expo start --web",
+    "deploy": "gh-pages --nojekyll -d dist",
+    "predeploy": "expo export -p web"
   },
   "dependencies": {
     "@expo/metro-runtime": "~4.0.1",
@@ -20,7 +23,8 @@
     "react-native-web": "~0.19.13"
   },
   "devDependencies": {
-    "@babel/core": "^7.20.0"
+    "@babel/core": "^7.20.0",
+    "gh-pages": "^6.3.0"
   },
   "private": true
 }
